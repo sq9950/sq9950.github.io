@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+var SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 
 module.exports = {
   // context: path.join(__dirname, 'example'),
@@ -89,6 +90,14 @@ module.exports = {
     new webpack.DefinePlugin({
       DEBUG: process.env.NODE_ENV !== 'production',
     }),
+    new SWPrecacheWebpackPlugin({
+        cacheId: 'v1',
+        dontCacheBustUrlsMatching: /\.\w{8}\./,
+        filename: 'service-worker.js',
+        minify: true,
+        navigateFallback: './example/index.html',
+        staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+      }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'example/index.html'),
     }),
