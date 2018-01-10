@@ -1,0 +1,94 @@
+
+.didi_btn {
+  display: block;
+  padding: 0;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  background-image: none;
+  white-space: nowrap;
+  outline: none;
+  font-size: 16px;
+  color: #343C5C;
+  background: #fff;
+  border: 1px solid #343C5C ;
+  box-sizing: border-box
+}
+
+.didi_btn.active,.didi_btn:active,.didi_btn:focus {
+  
+  border: 1px solid #343C5C;
+}
+.didi_btn.active,.didi_btn:active{
+  background: rgba(214, 216, 222, .3);
+}
+
+.didi_btn:disabled {
+  background: #e5e5e5;
+  border: none;
+  color: #fff;
+}
+
+.didi_btn_selected {
+  border:1px solid #4a4c5b;
+  color:#4a4c5b;
+}
+.didi_btn_highlight {
+  background: #343C5C;
+  color: #fff;
+  border: none;
+  height: 44px;
+}
+.didi_btn_highlight:hover,.didi_btn_highlight:visited{border:none;}
+.didi_btn_highlight.active,.didi_btn_highlight:active {
+  background: #293049;border:none;outline: none;
+}
+.didi_btn_disable,.didi_btn_disable:focus,.didi_btn_disable:active{
+  border-color: #ccc;color: #ccc;background: none; 
+}
+
+.didi_btn_highlight_disable,.didi_btn_highlight:disabled,.didi_btn_highlight_disable:active,.didi_btn_highlight_disable:focus  {
+  background: #D7D8DF;
+  color: #fff;
+  border: none
+}
+
+/*.didi_btn_highlight_disable:active {
+  background: #ccc
+}*/
+
+.didi_btn_small {
+
+}
+
+.didi_btn_border {
+  outline: none;
+  font-size: 12px;
+  height: 18px;
+  line-height: 15px;
+  vertical-align: middle;
+  width:auto;
+  display: inline;
+  padding:.1rem .6rem;
+  text-align: center;
+  /*background:transparent*/
+}
+
+
+.didi_btn_border.active,.didi_btn_border:active {
+  color: #878787
+}
+.jimu-button-size-big{display: inline-block;padding: 0 50px;font-size: 1.5rem;}
+.jimu-button-size-samll{display: inline-block;padding: 0 15px;font-size: 1.2rem;line-height: 28px;height: 28px;}
+.jimu-button-type-float,.jimu-button-type-float:active,.jimu-button-type-float:focus{background: #FFFFFF;
+box-shadow: 0 1px 6px 0 rgba(0,0,0,0.15);
+border-radius: 2px;border:none; }
+.jimu-button-type-float.didi_btn_disable,.jimu-button-type-float.didi_btn_disable:focus{background: #FAFAFA;color: #ccc}
+.jimu-button-type-float:active{background:#FAFAFA}
+.jimu-button-type-float.didi_btn_highlight{color:#343C5C}
+

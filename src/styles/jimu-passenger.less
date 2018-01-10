@@ -1,0 +1,70 @@
+.jimu_passenger {
+  background: #fff;
+  position: relative;
+  margin: 1rem 0;
+  background: #fff;
+  padding:1rem 1.4rem;
+  border-radius: 2px;
+  display: block;
+  .brd {
+    border-top: 1px solid #e1e1e1;
+    margin: 1rem 0 0;
+    padding-top: 1rem;
+  }
+  .jimu_passenger_avatar {
+    position: absolute;
+    top:1rem;
+    left:1.4;
+    img {
+      border-radius:40px;
+    }
+    p {
+      border:1px solid #FC9153;
+      line-height: 1.2;
+      margin-top: 3px;
+      padding: 1.5px;
+      text-align: center;
+      font-size: 1rem;
+      background: #FC9153;
+      color: #fff;
+      border-radius: 2px;
+    }
+  }
+  .jimu_passenger_userinfo {
+    margin-left: 80px;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    font-weight: 900;
+    li::before {
+      content:"• "
+    }
+    .green {
+      color: #31C8A4;
+    }
+    .red {
+      color: #FC9153;
+    }
+    span {
+      color:#000;
+    }
+  }
+  .jimu_passenger_telphone {
+    position: absolute;
+    top:1rem;
+    right:0rem;
+    font-size: 2rem;
+    a{
+      padding:.5rem 2rem 1rem;
+      display: block;
+    }
+  }
+  .price-layout{
+    font-size: 1.2rem;line-height: 18px;
+    span{margin-right: 3px;display: inline-block;white-space: nowrap;
+      b{font-size: 1.4rem; }
+    }
+    span:first-child{
+      margin-right: 5px;
+    }
+  }
+}
