@@ -1,0 +1,165 @@
+#rootContent{
+  height: 100%
+}
+.selectCity，.selectCity *{
+  box-sizing: border-box;
+}
+.selectCity{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: #fff;
+  -webkit-overflow-scrolling : touch;
+  .max_char{
+    position: absolute;
+    z-index: 22;
+    top:50%;
+    left:50%;
+    color:#666;
+    margin-left:-2.5rem;
+    margin-top:-2.5rem;
+    font-size: 5rem;
+  }
+  .selectTitle{
+    padding-left: 10px;
+    height: 42px;
+    line-height: 42px;
+    color:#999999;
+    font-size: 1.4rem;
+    background-color: #f0f0f0;
+  }
+  .positionAddr{
+    height: 50px;
+    line-height: 50px;
+    .icon{
+      font-size: 1.2rem;
+      margin-left:16px;
+      display: none;
+    }
+    .icon-addr:before{
+      color:#ccc;
+    }
+    .positionCityName{
+      font-size: 1.6rem;
+      margin-left:10px;
+    }
+  }
+  /*.noSelect{
+    height:33px;
+    line-height:33px;
+    color:#999999;
+    font-size: 1.2rem;
+    color:#000;
+  }*/
+}
+.selectCon {
+  padding-bottom: 10px;
+  padding-left: 16px;
+  max-height: 94px;
+  overflow: scroll;
+  .list {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    margin: 10px 16px 0 0px;
+    display: inline-block;
+    background-color: #f3f4f5;scrollHeight
+    border-radius: 3px;
+    box-sizing: border-box;
+    .icon-addr {
+      &::before{
+        color:#ccc;
+      }
+      margin-right: 6px;
+    }
+    .icon-close:before {
+      margin-left: 5px;
+      color: #ccc;
+      font-size: 1.2rem;
+    }
+    span {
+      font-size: 1.4rem;
+      color: #666666;
+      letter-spacing: 0;
+      line-height: 16px;
+      vertical-align: middle;
+    }
+  }
+}
+._cityCon{
+  height:100%;
+  overflow: scroll;
+  
+}
+.cityCon {
+  .first_char {
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    padding-left: 15px;
+    color: #333333;
+    font-size: 1.2rem;
+    background-color: #f0f0f0;
+  }
+  .list {
+    display: block;
+    height: 50px;
+    padding-top: 16px;
+    border-bottom: 1px solid rgba(242, 242, 242, 1);
+    box-sizing: border-box;
+    .check {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      margin-left: 16px;
+      border-radius: 3px;
+      border: 1px solid #cccccc;
+      vertical-align: top;
+      .icon {
+        display: none;
+      }
+    }
+    .cityName {
+      font-size: 1.6rem;
+      color: #333333;
+      margin-left: 10px;
+    }
+  }
+  /*当城市选中的时候样式*/
+  .list.select {
+    .check {
+      width: 16px;
+      height: 16px;
+      border: none;
+      background-color: #307dfb;
+      .icon {
+        display: block;
+      }
+      .icon-popup_right:before{
+        color:#fff;
+        font-size: 1.2rem;
+        position:relative;
+        top:2px;
+        left:2px;
+
+      }
+    }
+  }
+}
+.fast_char{
+  position: fixed;
+  top:50%;
+  right: 0px;
+  margin-top: -208px;
+  text-align: center;
+  width:50px;
+  a{
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    font-size: 1.2rem;
+  }
+}

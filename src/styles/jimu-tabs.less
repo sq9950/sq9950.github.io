@@ -1,0 +1,31 @@
+.jimu-tabs{
+  .jimu-tabs-hd{
+    background: #fff;overflow-x:auto;.displayflex();-webkit-overflow-scrolling : touch;padding-left: 1px;
+    .jimu-tabs-nav{
+      .flex(1);text-align: center;
+      .jimu-tabs-nav-bar{line-height: 48px;font-size: 1.4rem;color: #999;display: inline-block;margin:0 20px; }
+    }
+    .jimu-tabs-nav-active{
+      .jimu-tabs-nav-bar{border-bottom: 2px solid #1E96FA;color: #1E96FA}
+    }
+  }
+  .jimu-tabs-bd{
+    margin-top: 1px;
+    .jimu-tabs-content{display: none;}
+    .jimu-tabs-content-active{display: block;}
+  }
+}
+.jimu-tabs-in-local{
+  .jimu-tabs-hd{
+    display: block;text-align: center;white-space:nowrap; background: none;
+    .jimu-tabs-nav{
+      display: inline-block;
+      .jimu-tabs-nav-bar{font-size: 1.2rem;color: #343C5C;background:#fff ;border: 1px solid #343C5C;margin: 0;padding:0 27px;line-height: 25px;margin-left: -1px; }
+    }
+    .jimu-tabs-nav:last-child .jimu-tabs-nav-bar{border-radius: 0 2px 2px 0;}
+    .jimu-tabs-nav:first-child  .jimu-tabs-nav-bar{border-radius: 2px 0 0 2px;}
+    .jimu-tabs-nav-active{
+      .jimu-tabs-nav-bar{background:#343C5C;color: #fff}
+    }
+  }
+}

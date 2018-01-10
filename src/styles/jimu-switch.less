@@ -1,0 +1,74 @@
+.ui-switch{
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  position: relative;
+  background: #ccc
+}
+.ui-switch input{display: none}
+.ui-switch:after{
+  content:"";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 2px;
+  left:0;
+  -moz-border-radius: 21px;
+  -webkit-border-radius: 21px;
+  border-radius: 21px;
+  background: #fff;
+}
+.switch-open{background: #343C5C}
+.switch-open:after{left: 27px;}
+.switch-open-move{-webkit-animation:switchShow .2s .0s ease both;}
+.switch-open-move:after{-webkit-animation:switchShowBnt .2s .0s ease both;}
+.jimu-switch-issmall.switch-open-move:after{-webkit-animation:switchShowsmallBnt .2s .0s ease both;}
+@-webkit-keyframes switchShow{
+  0%{background: #ccc}
+  100%{background: #343C5C}
+}
+
+@-webkit-keyframes switchShowBnt{
+  0%{left: 2px;}
+  100%{left: 27px;}
+}
+
+@-webkit-keyframes switchShowsmallBnt{
+  0%{left: 2px;}
+  100%{left: 17px;}
+}
+
+.switch-close{background: #ccc}
+.switch-close:after{left: 2px;}
+
+.switch-close-move{-webkit-animation:switchClose .2s .0s ease both;}
+.switch-close-move:after{-webkit-animation:switchCloseBnt .2s .0s ease both;}
+.jimu-switch-issmall.switch-close-move:after{-webkit-animation:switchClosesmallBnt .2s .0s ease both;}
+@-webkit-keyframes switchClose{
+  100%{background: #ccc}
+  0%{background: #343C5C}
+}
+
+@-webkit-keyframes switchCloseBnt{
+  100%{left: 2px;}
+  0%{left: 27px;}
+}
+
+@-webkit-keyframes switchClosesmallBnt{
+  100%{left: 2px;}
+  0%{left: 17px;}
+}
+.switch-disabled{background: #ccc}
+.switch-open.switch-disabled{background: rgba(52, 60, 92, .5);}
+
+.jimu-switch-issmall{
+  width: 40px;height: 25px;
+  .ui-switch:after{
+    width:20px;height: 20px;border-radius: 20px;
+  }
+}
+.jimu-switch-issmall.switch-open:after{left: 17px;}

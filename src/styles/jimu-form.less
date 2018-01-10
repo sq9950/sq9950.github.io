@@ -1,0 +1,22 @@
+/* Checkbox */
+.jimu-form-checkbox,.jimu-form-radio{
+  display: inline-block;vertical-align: middle;line-height: 20px;
+  span{font-size: 2.4rem;display: inline-block;vertical-align: middle;color: #ccc}
+  label{font-size: 1.4rem;margin-left: 5px;display: inline-block;vertical-align: middle;}
+}
+.jimu-checkbox-checked,.jimu-radio-checked{
+  span{color:#1E96FA}
+}
+.jimu-checkbox-disabled,.jimu-radio-disabled{
+  span,label{color: #ccc;}
+}
+.jimu-checkbox-aside,.jimu-radio-aside{display: block;overflow: hidden;
+  span{float: right;}
+}
+
+.jimu-check-item{
+  padding: 0;
+  .jimu-form-checkbox,.jimu-form-radio{padding: 15px}
+  .jimu-form-checkbox:active,.jimu-form-radio:active{background: #F3F4F5;color: #999}
+  .jimu-form-checkbox.jimu-checkbox-disabled:active,.jimu-form-radio.jimu-radio-disabled:active{background: transparent;}
+}
