@@ -10,7 +10,7 @@
     "build": "npm run clean & NODE_ENV=production babel ./src --out-dir ./dist --copy-files && npm run build:less && npm run clean:less",
     "build:less": "find dist/styles/index.less -exec lessc --clean-css='--s1 --advanced --compatibility=ie8' {} \\; > ./dist/styles/jimu.min.css",
     "build:js": " ./node_modules/.bin/babel src --copy-files --source-maps --extensions .es6,.es,.jsx,.js --out-dir dist",
-    "buildpage": "npm run clean:demo & NODE_ENV=production webpack -p --config webpack.config.prod.js --progress --colors",
+    "buildpage": "npm run clean:demo & NODE_ENV=production webpack -p --config webpack.config.prod.js --progress --colors && cp example/pwa/* demo",
     "start": "webpack-dev-server --hot --config webpack.config.dev.js",
     "test": "mocha --compilers js:babel-core/register --recursive -r ignore-styles -r jsdom-global/register",
     "test:watch": "npm run test -- --watch"
